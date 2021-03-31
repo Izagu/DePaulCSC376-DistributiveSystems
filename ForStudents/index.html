@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>Welcome to CSC 376 2021 Winter Final Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+  * {
+      box-sizing: border-box;
+    }
+
+  .column
+    {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+  .row:after
+    {
+      content: "";
+      display: table;
+      clear: both
+    }
+
+  h1{
+      text-align: center;
+    }
+
+  h2{
+      text-align: center;
+    }
+  </style>
+ </head>
+ <body>
+  <h1>Welcome to CSC 376 2021 Winter Final Project</h1>
+  <h2>2021 Winter</h2>
+   <div class="row">
+    <div class="column">
+     <form action="exoplanets.swt">
+      <table>
+	<tr>
+	  <td align="center">
+	    <label for="xAxis">x-axis</label><br/>
+	    <select name="xAxis" id="xAxis">
+	      <option value="pl_orbper">Orbital Period</option>
+	      <option value="pl_orbeccen">Orbital Eccentricity</option>
+	      <option value="pl_bmassj">Best mass estimate (in Jupiters)</option>
+	      <option value="pl_radj">Planetary radius (in Jupiters)</option>
+	      <option value="st_dist">Distance to star (in Parsecs)</option>
+	      <option value="st_teff">Effective stellar temperature (in Kelvin)</option>
+	      <option value="st_mass">Stellar mass (in Suns)</option>
+	      <option value="st_rad">Stellar radius (in Suns)</option>
+	    </select>
+	  </td>
+	</tr>
+	<tr>
+	  <td align="center">
+	   <label for="yAxis">y-axis</label><br/>
+	   <select name="yAxis" id="yAxis">
+	      <option value="pl_orbper">Orbital Period</option>
+	      <option value="pl_orbeccen">Orbital Eccentricity</option>
+	      <option value="pl_bmassj">Best mass estimate (in Jupiters)</option>
+	      <option value="pl_radj">Planetary radius (in Jupiters)</option>
+	      <option value="st_dist">Distance to star (in Parsecs)</option>
+	      <option value="st_teff">Effective stellar temperature (in Kelvin)</option>
+	      <option value="st_mass">Stellar mass (in Suns)</option>
+	      <option value="st_rad">Stellar radius (in Suns)</option>
+	   </select>
+	  </td>
+	</tr>
+	<tr>
+	  <td align="center">
+	    <input type="submit" value="Submit"/><br/>
+	  </td>
+	</tr>
+      </table>
+     </form> 
+    </div>
+    <div class="column">
+      <table>
+	<tr>
+	  <td align="center"><img src="noData.png" height="256" width="256"/></td>
+	</tr>
+      </table>
+    </div>
+   </div>
+ </body>
+</html>
